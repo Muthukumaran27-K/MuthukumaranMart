@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - MuthukumaranMart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="form-container">
+
+    <div class="form-box">
+
+        <h1>Checkout</h1>
+
+        <form action="placeOrder" method="post">
+
+            <label>Full Name</label>
+            <input type="text" name="name"
+                   placeholder="Enter your name" required>
+
+            <label>Address</label>
+            <textarea name="address"
+                      placeholder="Enter delivery address"
+                      required></textarea>
+
+            <label>Phone Number</label>
+            <input type="tel" name="phone"
+                   placeholder="Enter phone number" required>
+
+            <label>Payment Method</label>
+
+            <select name="payment">
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Card</option>
+            </select>
+
+            <h3>Total Amount: ₹550</h3>
+
+            <button type="submit" class="btn full">
+                Place Order
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

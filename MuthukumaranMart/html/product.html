@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop - MuthukumaranMart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        🛒 MuthukumaranMart
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="cart.html">Cart 🛒</a>
+        <a href="orders.html">Orders</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+</header>
+
+
+<!-- ================= SHOP HEADER ================= -->
+
+<section class="shop-header">
+
+    <h1>Shop Our Products</h1>
+
+    <p>
+        Find everything you need for your everyday life.
+    </p>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="section">
+
+    <h2>Categories</h2>
+
+    <div class="category-buttons">
+
+        <button onclick="filterProducts('all')">
+            All
+        </button>
+
+        <button onclick="filterProducts('grocery')">
+            🥦 Groceries
+        </button>
+
+        <button onclick="filterProducts('beverage')">
+            🥤 Beverages
+        </button>
+
+        <button onclick="filterProducts('personal')">
+            🧴 Personal Care
+        </button>
+
+        <button onclick="filterProducts('home')">
+            🏠 Home Essentials
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="section">
+
+    <div class="product-grid">
+
+
+        <!-- PRODUCT 1 -->
+
+        <div class="product" data-category="grocery">
+
+            <div class="product-image">
+                <img src="images/rice.jpg"
+                     alt="Premium Rice">
+            </div>
+
+            <span class="badge">
+                Best Seller
+            </span>
+
+            <h3>Premium Rice</h3>
+
+            <p>
+                High-quality rice for everyday cooking.
+            </p>
+
+            <div class="price">
+                ₹550
+            </div>
+
+            <button class="btn"
+                    onclick="addToCart('Premium Rice', 550)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product" data-category="grocery">
+
+            <div class="product-image">
+                <img src="images/wheat.jpg"
+                     alt="Wheat Flour">
+            </div>
+
+            <h3>Wheat Flour</h3>
+
+            <p>
+                Fresh and finely ground wheat flour.
+            </p>
+
+            <div class="price">
+                ₹65
+            </div>
+
+            <button class="btn"
+                    onclick="addToCart('Wheat Flour', 65)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product" data-category="beverage">
+
+            <div class="product-image">
+                <img src="images/milk.jpg"
+                     alt="Fresh Milk">
+            </div>
+
+            <h3>Fresh Milk</h3>
+
+            <p>
+                Fresh and nutritious dairy milk.
+            </p>
+
+            <div class="price">
+                ₹60
+            </div>
+
+            <button class="btn"
+                    onclick="addToCart('Fresh Milk', 60)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+
+        <div class="product" data-category="beverage">
+
+            <div class="product-image">
+                <img src="images/juice.jpg"
+                     alt="Fruit Juice">
+            </div>
+
+            <h3>Fruit Juice</h3>
+
+            <p>
+                Refreshing fruit juice.
+            </p>
+
+            <div class="price">
+                ₹90
+            </div>
+
+            <button class="btn"
+                    onclick="addToCart('Fruit Juice', 90)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT 5 -->
+
+        <div class="product" data-category="personal">
+
+            <div class="product-image">
+                <img src="images/shampoo.jpg"
+                     alt="Shampoo">
+            </div>
+
+            <h3>Shampoo</h3>
+
+            <p>
+                Everyday hair care shampoo.
+            </p>
+
+            <div class="price">
+                ₹180
+            </div>
+
+            <button class="btn"
+                    onclick="addToCart('Shampoo', 180)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT 6 -->
+
+        <div class="product" data-category="personal">
+
+            <div class="product-image">
+                <img src="images/soap.jpg"
+                     alt="Bath Soap">
+            </div>
+
+            <h3>Bath Soap</h3>
+
+            <p>
+                Gentle soap for everyday use.
+            </p>
+
+            <div class="price">
+                ₹45
+            </div>
+
+            <button class="btn"
+                    onclick="addToCart('Bath Soap', 45)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT 7 -->
+
+        <div class="product" data-category="home">
+
+            <div class="product-image">
+                <img src="images/detergent.jpg"
+                     alt="Detergent">
+            </div>
+
+            <h3>Detergent</h3>
+
+            <p>
+                Powerful cleaning detergent.
+            </p>
+
+            <div class="price">
+                ₹120
+            </div>
+
+            <button class="btn"
+                    onclick="addToCart('Detergent', 120)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT 8 -->
+
+        <div class="product" data-category="home">
+
+            <div class="product-image">
+                <img src="images/cleaner.jpg"
+                     alt="Home Cleaner">
+            </div>
+
+            <h3>Home Cleaner</h3>
+
+            <p>
+                Keep your home clean and fresh.
+            </p>
+
+            <div class="price">
+                ₹150
+            </div>
+
+            <button class="btn"
+                    onclick="addToCart('Home Cleaner', 150)">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 MuthukumaranMart.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function filterProducts(category) {
+
+    const products =
+        document.querySelectorAll(".product");
+
+    products.forEach(product => {
+
+        if (
+            category === "all" ||
+            product.dataset.category === category
+        ) {
+
+            product.style.display = "block";
+
+        } else {
+
+            product.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+function addToCart(name, price) {
+
+    alert(
+        name +
+        " added to cart!\nPrice: ₹" +
+        price
+    );
+
+}
+
+</script>
+
+</body>
+</html>
